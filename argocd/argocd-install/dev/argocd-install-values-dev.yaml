@@ -23,7 +23,7 @@ server:
         helm:
           version: v3
           valueFiles:
-            - values.yaml
+#            - values.yaml
             - ../argocd-install-values-dev.yaml
         targetRevision: HEAD
       destination:
