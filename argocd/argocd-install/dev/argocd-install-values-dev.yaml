@@ -9,7 +9,7 @@ server:
   config:
     repositories: |
       - type: git
-        url: http://bitbucket.11stcorp.com/scm/~1101255/workflow-deployment.git
+        url: https://github.com/heesuk-ahn/cicd-workflow-demo-deployment.git
       - name: argo-helm
         type: helm
         url: https://argoproj.github.io/argo-helm
@@ -18,7 +18,7 @@ server:
       namespace: argocd
       project: argocd
       source:
-        repoURL: http://bitbucket.11stcorp.com/scm/~1101255/workflow-deployment.git
+        repoURL: https://github.com/heesuk-ahn/cicd-workflow-demo-deployment.git
         path: argocd/argocd-install/base
         helm:
           version: v3
@@ -37,7 +37,7 @@ server:
       project: argocd
       source:
         path: argocd/argocd-apps
-        repoURL: http://bitbucket.11stcorp.com/scm/~1101255/workflow-deployment.git
+        repoURL: https://github.com/heesuk-ahn/cicd-workflow-demo-deployment.git
         targetRevision: HEAD
         directory:
           recurse: true
@@ -54,7 +54,7 @@ server:
       project: argocd
       source:
         path: argocd/argocd-appprojects
-        repoURL: http://bitbucket.11stcorp.com/scm/~1101255/workflow-deployment.git
+        repoURL: https://github.com/heesuk-ahn/cicd-workflow-demo-deployment.git
         targetRevision: HEAD
         directory:
           recurse: true
