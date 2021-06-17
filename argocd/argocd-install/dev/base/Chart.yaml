@@ -1,0 +1,7 @@
+apiVersion: v2   # helm version
+name: argo-cd
+version: 1.0.0   # chart version
+dependencies:
+  - name: argo-cd
+    version: ~3.6.8
+    repository: https://argoproj.github.io/argo-helm
