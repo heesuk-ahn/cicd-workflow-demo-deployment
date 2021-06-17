@@ -1,5 +1,4 @@
 .tgz
 charts/
 .idea/
-Chart.lock
 dev/argo-cd/**
