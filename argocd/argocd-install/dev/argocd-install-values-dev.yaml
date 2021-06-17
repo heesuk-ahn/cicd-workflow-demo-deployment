@@ -19,7 +19,7 @@ server:
       project: argocd
       source:
         repoURL: https://github.com/heesuk-ahn/cicd-workflow-demo-deployment.git
-        path: argocd/argocd-install/base
+        path: argocd/argocd-install/dev/base
         helm:
           version: v3
           valueFiles:
